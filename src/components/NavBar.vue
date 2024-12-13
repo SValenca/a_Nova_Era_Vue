@@ -52,22 +52,22 @@
   backdrop-filter: blur(10px);
   background-color: var(--shadow);
   /* display: flex;
-    align-items: flex-start;
-    padding: 20px;
-    flex-direction: row;
-    justify-content: space-around;
-    position: sticky;
-    top: 0 */
+	align-items: flex-start;
+	padding: 20px;
+	flex-direction: row;
+	justify-content: space-around;
+	position: sticky;
+	top: 0 */
 }
 
 /* .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
 } */
 
 /* .nav-links li {
-    margin-right: 20px;
+	margin-right: 20px;
 } */
 
 .navbar .nav-link {
@@ -82,7 +82,7 @@
 .navbar .nav-link:hover,
 .navbar .nav-link:active {
   /* background-color: var(--yellow);
-    border-radius: 5px; */
+	border-radius: 5px; */
   color: var(--yellow);
   border-bottom: solid 4px var(--yellow);
   transition: 0.3s ease;
