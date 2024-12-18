@@ -16,6 +16,7 @@
           aria-describedby="nameHelp"
           name="nome"
           required
+          v-model="person.name"
         />
         <div id="nameHelp" class="form-text"></div>
       </div>
@@ -29,6 +30,7 @@
           aria-describedby="telHelp"
           name="telefone"
           required
+          v-model="person.telephone"
         />
         <div id="telHelp" class="form-text"></div>
       </div>
@@ -42,6 +44,7 @@
           aria-describedby="emailHelp"
           name="email"
           required
+          v-model="person.email"
         />
         <div id="emailHelp" class="form-text"></div>
       </div>
@@ -54,6 +57,7 @@
           id="passwordInput"
           aria-describedby="passwordHelp"
           name="password"
+          v-model="person.password"
         />
         <div id="passwordHelp" class="form-text"></div>
       </div>
@@ -68,8 +72,10 @@
           id="confPasswordInput"
           aria-describedby="confPasswordHelp"
           name="confPassword"
+          v-model="confPass"
         />
         <div id="confPasswordHelp" class="form-text"></div>
+        <span v-if="person.password!== confPass" class="text-danger">Senha invalidas</span>
       </div>
 
       <div class="mb-3">
@@ -80,6 +86,7 @@
           id="photoInput"
           aria-describedby="photoHelp"
           name="photo"
+
         />
         <div id="photoHelp" class="form-text"></div>
       </div>
@@ -91,7 +98,15 @@
     </form>
   </section>
 </template>
-<script setup lang="ts"></script>
+
+<script setup lang="ts">
+import { ref } from "vue"
+import { Person } from "@/core/domain/Person"
+
+const confPass = ref<string>()
+const person = ref<Person>(new Person())
+</script>
+
 <style scoped>
 @import "@/assets/css/form.css";
 </style>

@@ -5,6 +5,7 @@
         <div class="card-img">
           <img :src="service.fotos" alt="" />
         </div>
+
         <div class="card-content">
           <h2>{{ service.nome }}</h2>
           <p>{{ service.descricao }}</p>

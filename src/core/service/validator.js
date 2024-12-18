@@ -26,7 +26,7 @@ export function validateEmail() {
     console.log(value)
     let error = ""
     //if (value.indexOf('@') === -1 || value.indexOf('.') === -1) {
-    const regexEmail = /^[a-z0-9]+[a-z]+\.([a-z]{3})+$/g
+    const regexEmail = /^[a-z0-9]+\@[a-z]+\.([a-z]{3})+$/g
     if (!regexEmail.ma(value)) {
       error = "E-mail invalido"
     }

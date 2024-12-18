@@ -24,14 +24,14 @@
         <input type="checkbox" name="remenber" id="rem" />
         <label for="rem">Lembre-me</label>
       </div>
-
       <div class="form-group">
         <button>Entrar</button>
       </div>
-
       <div>
-        <p>Novo aqui? <a href="person-add.html">cadastre-se</a></p>
-        <p><a href="person-recovery.html">Sequeceu a senha?</a></p>
+        <p>Novo aqui? <router-link to="person-add">cadastre-se</router-link></p>
+        <p>
+          <router-link to="person-recovery">esqueceu a senha?</router-link>
+        </p>
       </div>
     </form>
   </section>
