@@ -11,6 +11,7 @@
           autofocus
         />
       </div>
+
       <div class="form-group">
         <label for="password">Senha</label>
         <input
@@ -20,23 +21,28 @@
           placeholder="senha"
         />
       </div>
+
       <div class="form-group-inline">
-        <input type="checkbox" name="remenber" id="rem" />
+        <input type="checkbox" name="remember" id="rem" />
         <label for="rem">Lembre-me</label>
       </div>
+
       <div class="form-group">
         <button>Entrar</button>
       </div>
+
       <div>
-        <p>Novo aqui? <router-link to="person-add">cadastre-se</router-link></p>
+        <p>Novo aqui? <RouterLink to="/person-add">cadastre-se</RouterLink></p>
         <p>
-          <router-link to="person-recovery">esqueceu a senha?</router-link>
+          <router-link to="/person-recovery">esqueceu a senha?</router-link>
         </p>
       </div>
     </form>
   </section>
 </template>
+
 <script setup lang="ts"></script>
+
 <style scoped>
 @import "@/assets/css/login.css";
 </style>
